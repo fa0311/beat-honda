@@ -1,0 +1,23 @@
+{
+    "name": "じゃんけんに勝つ",
+    "description": "じゃんけんに絶対に勝てるようになります",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://twitter.com/*"
+            ],
+            "css": [
+                "index.css"
+            ],
+            "js": [
+                "jquery-3.4.1.min.js",
+                "main.js"
+            ]
+        }
+    ]
+}
